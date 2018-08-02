@@ -14,7 +14,12 @@
  *= require_self
  */
 .home {
-  margin: 40px;
+  margin: auto;
   
 }
 
+.secretpage {
+  margin: 40px;
+  font-weight: 100em;
+
+}
