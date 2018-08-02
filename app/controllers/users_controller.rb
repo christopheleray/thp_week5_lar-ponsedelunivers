@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   	puts "====================create========================"
     user = User.create(user_params)
     puts params.inspect
-    redirect_to home_path
+    redirect_to login_path
     puts "---------------------end--------------------------"
   end
 
