@@ -19,6 +19,9 @@ class SessionsController < ApplicationController
 
   def destroy
   	puts "============destroy session==============="
+    log_out
+    redirect_to home_path
   	puts "------------------------------------------"
   end
+
 end

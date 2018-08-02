@@ -7,9 +7,16 @@ class UsersController < ApplicationController
 
   def create
   	puts "====================create========================"
-    user = User.create(user_params)
     puts params.inspect
-    redirect_to login_path
+    @user = User.new(user_params)
+    if @user.save
+      log_in @user
+      flash[:success] = "Welcome :)"
+      redirect_to @user
+    else
+      render 'new'
+    end
+     
     puts "---------------------end--------------------------"
   end
 
