@@ -22,7 +22,11 @@ class UsersController < ApplicationController
 
   def show
     puts "--------------------show--------------------------"
+    if current_user
     @user = User.find(params[:id])
+  else
+    redirect_to login_path
+  end
     puts "---------------------end--------------------------"
   end
 
