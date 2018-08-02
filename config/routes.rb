@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root to: 'static_pages#home', as: 'home'
+  get '/secret_page', to: 'static_pages#secret_page', as: 'secret_page'
+  resources :users
 end
