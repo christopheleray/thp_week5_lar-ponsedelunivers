@@ -15,6 +15,7 @@ class UsersController < ApplicationController
 
   def show
     puts "--------------------show--------------------------"
+    @user = User.find(params[:id])
     puts "---------------------end--------------------------"
   end
 
