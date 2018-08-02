@@ -19,7 +19,7 @@ class SessionsController < ApplicationController
 
 
   def destroy
-  	puts "============destroy session==============="
+  	puts "============destroy session================"
     log_out if logged_in?
     redirect_to home_path
   	puts "------------------------------------------"
