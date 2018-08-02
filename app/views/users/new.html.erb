@@ -1,0 +1,18 @@
+<h1>Création de compte</h1>
+<div class= 'container'>
+	<%= form_for @user do |f|%>
+	<div class= 'form-group'>
+		<label>Entres ton email :</label>
+		<%= f.text_field :email, class: 'form-control', placeholder: 'exemple@gmail.com'%>
+	</div>
+	<div class= 'form-group'>
+		<label>Entres ton mot de passe :</label>
+		<%= f.password_field :password, class: 'form-control'%>
+	</div>
+	<div class= 'form-group'>
+		<label>Confirmes ton mot de passe :</label>
+		<%= f.password_field :password_confirmation, class: 'form-control'%>
+	</div>
+	<button type= 'submit' class="btn btn-primary">Soumettre</button>
+	<%end%>
+</div>
