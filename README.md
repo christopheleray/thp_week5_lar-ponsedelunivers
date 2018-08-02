@@ -2,6 +2,11 @@
 
 
 [Heroku app](https://secret-rennes-thp.herokuapp.com/)
+
+_user: rennes@gmail.com_
+
+_password: rennesforever_
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
